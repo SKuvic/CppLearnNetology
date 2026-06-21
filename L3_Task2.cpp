@@ -9,9 +9,9 @@ int main() {
     double Mid;
     double Min;
 
-    std::cout << "Введите первое число: ", std::cin >> A1;
-    std::cout << "Введите второе число: ", std::cin >> B2;
-    std::cout << "Введите третье число: ", std::cin >> C3;
+    std::cout << "Введите первое число: "; std::cin >> A1;
+    std::cout << "Введите второе число: "; std::cin >> B2;
+    std::cout << "Введите третье число: "; std::cin >> C3;
 
 
     //// Через IF-ELSE-IF-ELSE
