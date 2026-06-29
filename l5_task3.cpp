@@ -5,8 +5,14 @@ int main () {
 
     srand(time(0));
     int array_bis [3][6];
+    // MIN/MAX numbers-values
     int max;
     int min;
+    // MIN/MAX - i,j placers-holders-reassigners-rewriters
+    int mini;
+    int maxi;
+    int minj;
+    int maxj;
       
     for (size_t i = 0; i < 3; i++)                      // Block I. Инициализация массива 3х6
         {
@@ -49,18 +55,24 @@ int main () {
                 if (array_bis[i][j]  > max )
                     {
                         max = array_bis[i][j];
+                        maxi = i;
+                        maxj = j;
                     }
                 if (array_bis[i][j]  < min )
                     {
-                            min = array_bis[i][j];
+                        min = array_bis[i][j];
+                        mini = i;
+                        minj = j;
                     }
+
             }
         }
 
     std:: cout << std:: endl;
     
-    std:: cout << "Минимальный элемент: " << min << std:: endl;
-    std:: cout << "Максимальный элемент: " << max << std:: endl;
+    std:: cout << "Минимальный элемент: " << "[ " << mini << " ] " << "[ " << minj << " ] = " << min << std:: endl;
+    std:: cout << "Максимальный элемент: "<< "[ " << maxi << " ] " << "[ " << maxj << " ] = " << max << std:: endl;
+
 
     return 0;
 }
