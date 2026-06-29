@@ -2,19 +2,18 @@
 #include <cstdlib> // для rand() и srand()
 #include <ctime>   // для time()
 
-
 int main () {
 
     srand(time(0));
     int array_bis [3][6];
     // MIN/MAX numbers-values
-    int max;
-    int min;
+    int max = 0;
+    int min = 0;
     // MIN/MAX - i,j placers-holders-reassigners-rewriters
-    int mini;
-    int maxi;
-    int minj;
-    int maxj;
+    int mini = 0;
+    int maxi = 0;
+    int minj = 0;
+    int maxj = 0;
       
     for (size_t i = 0; i < 3; i++)                      // Block I. Инициализация массива 3х6
         {
