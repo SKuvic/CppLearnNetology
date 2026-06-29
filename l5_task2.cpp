@@ -10,7 +10,7 @@ int main () {
       
     for (size_t i = 0; i < 10; i++)                         // Заполнение random max 99
         {
-            array_rand[i] = rand ()%100;
+            array_rand[i] = rand () % 100;
         }
     
     max = array_rand[0];                                    // 1st элемент массива для инициализации переменных min/max
