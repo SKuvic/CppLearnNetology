@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstdlib> // для rand() и srand()
+#include <ctime>   // для time()
 
 
 int main () {
