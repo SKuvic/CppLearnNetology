@@ -9,8 +9,7 @@ int pow (int value, int power)
         result *= value;
     }
 
-    std::cout << value << " в степени " << power << " = " << result << std::endl;
-    return result;
+   return result;
 }
 
 
@@ -18,23 +17,18 @@ int main (int argc, char** argv)
 {
     int value = 5, power = 2, result = 1;
 
-    pow (value, power);
-
+    std::cout << value << " в степени " << power << " = " <<  pow (value, power) << std::endl;
 
     value = 3;
     power = 3;
     result = 1;
 
-    pow (value, power);
-
-    
+    std::cout << value << " в степени " << power << " = " <<  pow (value, power) << std::endl;
     value = 4;
     power = 4;
     result = 1;
 
-    pow (value, power);
-
-
+    std::cout << value << " в степени " << power << " = " <<  pow (value, power) << std::endl;
 
     return 0;
 }

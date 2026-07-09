@@ -2,33 +2,25 @@
 
 int sum (int a, int b)
 {
-    int s = 0;
-	s = a + b;
-	return s;
+	return a + b;
 }
 
 int diff (int a, int b)
 {
-	int dif = 0;
-	dif = a - b;
-	return dif;
+	return a - b;
 }
 
 int multiplication (int a, int b)
 {
-	int mult = 0;
-	mult = a * b;
-	return mult;
+	return a * b;
 }
 
 double division (double a, double b)
 {
-	double div = 0;
-	div = a / b;
-	return div;
+	return static_cast<double>(a) / b;
 }
 
-int main(int argc, char** argv)
+int main (int argc, char** argv)
 {
 	int a = 5, b = 10;
 
